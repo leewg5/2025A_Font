@@ -1,0 +1,47 @@
+/* CSS 주석 */
+/* CSS 문법 : 선택자 {무엇을 : 어떻게;} */
+
+.product{
+    border: 1px solid gray; /* 구역 테두리 */
+    width: 300px; /* 구역 가로 사이즈 */
+    
+}
+
+/* 2. 제품 이미지 */
+.product-img{width: 300px;}
+
+.product-info{
+    border-top: 1px solid gray;
+    padding: 10px; /* 안쪽 여백 */
+}
+
+
+.title{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+
+}
+
+.price{
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.content{
+    font-size: 32px;
+    line-height: 160%;
+    margin-bottom: 10px;
+}
+
+
+.etc{
+    font-size: 12px;
+}
+
+.orange{
+    color: orange;
+    font-weight: bold;
+}
+

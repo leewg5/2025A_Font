@@ -1,0 +1,32 @@
+img{
+    width: 200px ;
+}
+.구역1{
+    text-align: left;
+}
+
+.구역2{
+    font-size: 20px ; /* 글꼴 크기 */
+    font-weight: bold; /* 글꼴 굵게 */
+    margin: 20px 3px 20px 3px ; /* 바깥쪽 여백 */
+  
+
+}
+
+.포인트{
+    color: orange;
+    font-size: 30px ;
+
+}
+
+.구역5{
+    background-color: azure;
+    color: rgb(14, 13, 13);
+    padding: 25px 20px;
+    line-height: 160% ;/* 줄간격 */
+    width: 500px ; /*구역 가로 사이즈 */
+}
+
+.구역0{
+    color: orange;
+}

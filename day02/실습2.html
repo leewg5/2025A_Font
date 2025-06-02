@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form>
+        <h3> 카테고리 
+        <select>
+            <option> 공지사항 </option> 
+            <option> 선택상자 </option>
+        </select> 
+        </h3>
+            <input type="text" placeholder="작성자" maxlength="5" /> 
+            <input type="password" placeholder="비밀번호" /> <br /><hr />
+            <input type="text" maxlength="50" placeholder="게시물 제목 입력" /> <br /><hr /><br />
+            <textarea cols="60" rows="30" placeholder="내용입력, 내용을 입력하세요"></textarea>  <br />         
+            공개선택 <input type="radio" name="공개여부"/> 공개용 
+                    <input type="radio" name="공개여부"/> 비공개용 <br />
+            공유선택
+                <input type="checkbox" name="공유여부" /> 카카오톡 
+                <input type="checkbox" name="공유여부" /> 트위터 
+                <input type="checkbox" name="공유여부" /> 네이버카페 <br />
+            작성날짜 <input type="date" /> 작성시간 <input type="time" />
+            <hr />
+
+            첨부파일 <input type="file" /> <br /> <br />
+            <input type="button" value="목록보기" /> <!-- value 속성으로 버튼내 텍스트 -->
+            <input type="submit" value="글쓰기"  />
+            <input type="reset" value="다시쓰기" />
+
+    </form>
+
+
+
+
+
+
+
+
+</body>
+</html>

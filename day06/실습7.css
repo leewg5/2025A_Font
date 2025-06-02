@@ -1,0 +1,163 @@
+/* 공통 부문 */
+
+*{margin : 0px; padding: 0px;} /*기본 여백들을 제거*/
+*{box-sizing: border-box;}  /* 구역 사이즈기준을 테두리까지 */
+a{ /*링크 기본값 제거 */
+    text-decoration: none; /* 밑줄제거 */
+    color: black; /* 글꼴 색상 */
+}
+
+/* ul 또는 ol에서 글머리 제거 */
+li{ list-style-type: none;}
+
+
+/* 헤더 CSS 부분 */
+#header{
+    display: flex; /*하위 요소 배치 방법 */
+    justify-content: space-between; /* 양쪽 끝 균등 가로 정렬 */
+    align-items: center; /* 세로 정렬 */  
+    width: 1280px;
+    margin: 15px auto;  
+}
+
+.top-menu{
+    display: flex; justify-content: flex-end;
+
+}
+
+.top-menu > li{
+    font-size: 12px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+.main-menu{
+    display: flex; justify-content: flex-end;
+  
+}
+
+.main-menu > li{  /*하위요소 선택자*/
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0px 30px 100px;
+
+}
+
+/* 본문 CSS */
+
+#main-img > img{width: 100%;}
+#main{ 
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 30px auto;
+}
+.sidebar{width: 250px;}
+.content{
+    width: 1000px;
+    display: flex; justify-content: space-between;
+}
+
+.content > .leftbox{width: 490px;}
+.content > .rightbox{width: 490px;}
+
+.title{
+    color: white;
+    background-color: #0ca9a2;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.sidebar > .comment{
+    line-height: 160%; /* 줄간격 */
+    padding: 5px;
+}
+
+.sidebar > .searchbox > .search-input {
+    width: 150px; height: 25px;
+    border-radius: 10px;
+    padding: 1px 6px;
+}
+
+.sidebar > .searchbox > .search-btn{
+    padding: 5px 10px; /* 안쪽 여백 버튼크기*/
+}
+
+.sidebar > .sub-title{
+    border-top: solid 2px black; 
+    font-size: 19px;
+    padding: 10px;
+}
+
+.sub-menu > li{
+    padding: 5px 10px;
+}
+
+.leftbox > .sub-title{
+    border-bottom: solid 1px black;
+    font-size: 19px;
+    padding: 10px;
+}
+
+.board > li{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0px;
+}
+
+.board{
+    margin-bottom: 50px;
+}
+
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* 자동 줄바꿈 = wrap */
+
+.content > .rightbox > .product-list > .product{
+    width: 240px;
+    margin-bottom: 30px;
+}
+
+
+#footer{
+    background-color: #05344e;
+    color: white; padding: 20px 0px;
+}
+
+.footer-inner{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+
+.footer-inner > .top-menu1{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.footer-inner > .top-menu1 > li{
+    margin-right: 40px;
+}
+
+.footer-inner > .footer-menu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-inner > .bottom-menu .footer-title{
+    margin-bottom: 10px;
+}
+
+.footer-inner > .bottom-menu li{
+    margin: 5px 0px;
+}
+
+.bottom-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}

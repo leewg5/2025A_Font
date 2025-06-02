@@ -1,0 +1,46 @@
+.s1{
+    display: inline; /* 한 줄에 해당 구역 포함 */
+    width: 100px; height: 100px;
+    margin: 20px; /* 바깥여백 */
+    padding: 20px; /* 안쪽여백 */
+
+}
+
+.s2{
+    display: block; /* 한 줄 차지 구역 */
+    width:100px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.s3{
+    display : inline-block;
+    width:100px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.s4{
+    display: none;  /* 표시 안함*/
+}
+
+.flexbox1{
+    display: flex;  /* 가로배치 정렬/ 하위요소 들의 배치 방법 */
+}
+
+
+.box1{
+    box-sizing: content-box; /* 구역 크기를 컨텐츠 기준 */
+    width: 500px;
+    padding: 10px;   /* 520px은 안쪽 여백 추가후 전체 크기*/
+}
+
+.box2{
+    box-sizing: border-box; /* 빈도가 높고, 구역크기를 컨텐츠+안쪽여백까지 기준 */ 
+    width : 500px;
+    padding: 10px;
+
+}

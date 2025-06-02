@@ -1,0 +1,55 @@
+.title1{
+    text-align: left;
+    font-family:"궁서"; /* 글꼴/폰트 : 현재 PC설치된 글꼴 기능*/
+    font-size : 40px; /* 글자크기 px(픽셀) */
+    font-style: italic; /* 글꼴 기울기 */
+    font-weight: bold; /* 글꼴 진하게 : h마크업은 기본값 */
+}
+
+.content1{
+    font-family: '궁서'; /* 글꼴 */
+    color :blue;                    /* 글꼴 색상 */
+    word-spacing: 5px;       /* 단어 간격 : 어간 */
+    letter-spacing: 5px;     /* 글자 간격 : 자간 */        
+    line-height : 150%;       /* 줄 간격 % 단위 */
+    font-weight: bold;
+}
+
+.title2{
+    text-align: center;
+    font-family: '굴림';
+    text-decoration: underline overline line-through;
+    color: red;
+    text-shadow: 1px 1px 5px gray;
+}
+
+.title3{
+    text-align: center;
+    font-family: '굴림';
+    text-decoration: underline overline line-through;
+    text-shadow: 1px 1px 5px gray;
+    color: red;
+    font-weight: bold;
+}
+
+.content2{
+    font-family: '궁서';
+    font-weight: bold;
+    color: blue;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    line-height: 150%;
+}
+
+.title4{
+    text-align: center;
+    font-family: '굴림';
+    text-decoration: underline overline line-through;
+    color: red;
+    text-shadow: 1px 1px 5px gray;
+}
+
+
+.폰트상{font-size: 30px;}
+.폰트중{font-size: 20px;}
+.폰트하{font-size: 10px;}

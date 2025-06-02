@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <img src="./짱구_이미지.jpg"/>
+    <img src="../day03/짱구.jpg" />
+    <img src="../짱구.jpg"/>
+    <img src="http://192.168.40.185:5500/day02/짱구.jpg" /> <!-- 서버 절대경로 -->
+    <img src="로컬 절대경로 " /> <!--서버는 로컬에 접근금지되어있다. -->
+
+
+    <audio src="오디오.mp3" controls="controls" autoplay="autoplay"> </audio> <!-- 브라우저 정책상 : 자동실행 안됨 -->
+    <video src="비디오.mp4" controls="controls" autoplay="autoplay" muted="muted"> </video>
+    <!-- 음소거 상태에서는 비디오가 자동재생 가능-->
+
+    <!-- 멀티미디어 : (퍼가기) -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ry1RrIVyl1M?si=YIRw_jOpnSYlkoPG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- 지도 퍼오기-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1119.2476607024896!2d126.72037908361554!3d37.49115884234727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7c465ba931ed%3A0x23b1e1147d0cb66!2z67aA7Y-J7Jet!5e0!3m2!1sko!2skr!4v1748319598636!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+</body>
+</html>

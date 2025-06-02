@@ -1,0 +1,123 @@
+/*확인용*/ /*
+*{
+    border: 1px solid red;}
+#header{ height: 150px;}
+#main{height: 400px;}
+#footer{height: 100px;}
+*/
+
+/* 구역 사이즈 기준: 컨텐츠+안쪽여백 */
+*{box-sizing: border-box;}
+
+
+#header{ height: 150px;}
+#main{height: 400px;}
+#footer{height: 100px;}
+
+*{margin : 0px; padding: 0px;} /*기본 여백들을 제거*/
+*{box-sizing: border-box;}  /* 구역 사이즈기준을 테두리까지 */
+a{ /*링크 기본값 제거 */
+    text-decoration: none; /* 밑줄제거 */
+    color: white; /* 글꼴 색상 */
+}
+
+/* ul 또는 ol에서 글머리 제거 */
+li{ list-style-type: none;}
+
+/* -----------------------------------------------*/
+
+#wrap{
+    background-color: #f3f1f1;
+    width: 1280px;
+    height: 850px;
+    margin: 10px auto;  
+  
+}
+
+.img1{
+    width: 150px;
+    height: 150px;
+    display: flex;
+}
+
+.title{
+    font-size: 60px;
+    padding: 40px;
+    font-weight: bold;    
+    display: flex; justify-content: flex-end;
+    margin: 20px 0px;  
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    background-color: white;
+    
+}
+
+#main{
+    display: flex;
+    align-items: stretch;
+    
+}
+
+.sidebar{
+    background-color: gray;
+    padding: 10px; /* 안쪽 여백 */   
+    color: white;
+    width: 300px;
+}
+
+.linkbox > div {
+    background-color: #bba6e4;
+    margin: 20px auto; /* 위/아래 =20 왼/오른쪽 =자동 */
+    padding: 15px;
+    border-radius: 20px;
+    width: 150px;
+    text-align: center;
+    border-right: 10px solid gray;
+}
+
+
+#contents{
+    background-color: white;
+    margin: 20px auto; /* 위/아래 =20 왼/오른쪽 =자동 */
+    border-radius: 10px;
+    width: 1032.91px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray ;
+    padding: 20px;
+}
+
+#contents > li {
+    color: rgb(199, 199, 199);
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    
+}
+
+#footer{
+    background-color: white;
+    margin: 20px auto; /* 위/아래 =20 왼/오른쪽 =자동 */
+    border-radius: 10px;
+    width: 600px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray ;
+    padding: 10px;
+}
+
+#footer > li{
+    color: rgb(199, 199, 199);
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    
+}

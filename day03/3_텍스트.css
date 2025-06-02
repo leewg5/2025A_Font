@@ -1,0 +1,46 @@
+/* 누구를 {무엇을 : 어떻게;} */
+
+/* 웹폰트 : 폰트 저작권 주의 */
+
+
+.title{
+    font-family:"궁서"; /* 글꼴/폰트 : 현재 PC설치된 글꼴 기능*/
+    font-size : 30px; /* 글자크기 px(픽셀) */
+    font-style: italic; /* 글꼴 기울기 */
+    font-weight: bold; /* 글꼴 진하게 : h마크업은 기본값 */
+}
+
+/* 무료폰트 복사 */
+@font-face {
+    font-family: 'SeoulAlrimTTF-Heavy';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/SeoulAlrimTTF-Heavy.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+.content{
+    font-family: 'SeoulAlrimTTF-Heavy'; /* 글꼴 */
+    color :purple;                    /* 글꼴 색상 */
+    word-spacing: 20px;       /* 단어 간격 : 어간 */
+    letter-spacing: 20px;     /* 글자 간격 : 자간 */        
+    line-height : 150%;       /* 줄 간격 % 단위 */
+}
+
+.writer{
+    text-align:center;           /* 텍스트 가로 정렬 : left, right, center */
+    text-decoration: underline;  /* 텍스트 선긋기 : underline(밑줄), overline(윗줄), line-through(취소선) */
+
+    /* 텍스트 그림자 x축, y축, 흐림정도 색상 */
+    text-shadow: 1px -1px 5 red ;
+    /* 색상 : 3가지 ( 1.색상명 2.RGB  3.헥스코드(16진수) */
+    color :green;
+    color: rgb( 140, 200, 100);  /* 2.RGB */
+    color: #000000; /* 헥스코드 */
+
+    
+
+
+}
+
