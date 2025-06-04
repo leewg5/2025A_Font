@@ -1,0 +1,77 @@
+/* 경계선 css */
+
+.divider{
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+    width: 400px;
+
+}
+
+.divider::before, .divider::after{
+    content: ""; /* 가상요소에는 빈 문자열 */
+    width: 100px;
+    height: 1px; /* 선 굵기 */
+    background-color: black;
+    margin: 0px 10px;
+}
+
+
+/* 드랍다운 메뉴1  CSS */
+
+#header{
+    background-color: beige;
+}
+
+#header > ul {
+    display: flex; justify-content: center;
+
+}
+
+#header > ul > li{
+    list-style-type: none;
+    padding: 20px;
+    position: relative;
+}
+
+#header .submenu{
+    display: none;
+    position: absolute;
+    top: 50px; left: 0px;
+    background-color: red;
+    padding: 10px;
+    display: none; /*화면에 표시 하지 않는다. */
+}
+
+/* 만약에 해당 메뉴룰 hover 했을때 서브메뉴(드롭다운) 열기 
+    .menu를 hover 했을때 .submanu에 CSS적용 */
+
+#header > ul > .menu:hover .submenu{display:block;}
+
+
+*{padding: 0px; margin: 0px;}
+
+#header2{
+    background-color: aqua;
+}
+
+#header2 > ul {
+    display:flex; 
+    justify-content:center;
+}
+
+#header2 > ul > li {
+    padding: 10px;
+}
+
+#header2{position:relative;}
+
+#header2 .submenu2{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    background-color: aqua;
+    display: none; /*호버가 되기전에는 숨기기*/
+}
+/* 만약에 메뉴 구역을 호버했을때 서브메뉴 열기 */
+#header2 >ul:hover .submenu2{display: block;}
+
