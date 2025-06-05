@@ -13,54 +13,57 @@
 <body>
 
     <div id="wrap">
-        <div id="header">
-            <div class="mainimg">
-                <img src="../day08/인스타그램1.png" />
-                <img src="../day08/인스타그램3.PNG" />
-
-                <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일" maxlength="20" /><br />
+        <div class="header">
+            <!--메인 이미지1 -->
+            <div class="main">
+            <a href="#"><img class="mainimg" src="../day08/인스타그램1.png" /></a>
+            <div class="인스타">    
+            <img class="mainimg2" src="../day08/인스타그램3.PNG" /><br/>
+                <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일" maxlength="20" /><br/>
                 <input type="password" placeholder="비밀번호" maxlength="20" /><br />
-                <div class="divider">
-                    <span> 또는 </span>
-                </div>
-            </div>  
-
-
-
-
-            <div id="계정">
+                <button class="login">로그인</button>
+                
+                <span class="divider"> 또는 </span>
+                <br/>
+                
+                <img class="imgf" src="../day08/페이스북.PNG" />
+                <span class="Flogin">Facebook으로 로그인</span>
+                
                 <ul>
-                    <li><img id="imgf" src="../day08/페이스북.PNG" />
-                        <span class="Flogin">Facebook으로 로그인</span>
-                    </li>
+                    <br />
                     <li>비밀번호를 잊으셨나요?</li>
-                    <li>계정이 없으신가요?</li>
-                    <li class="가입">가입하기</li>
+                    <br />
+                    
+                    <li>없으신가요? <a href="#" style="text-decoration: none;">가입하기</a></li>
                 </ul>
             </div>
+            </div>
         </div>
-
-        <div id="footer">
-            <ul id="footmenu1">
-                <li>Meta</li>
-                <li>소개</li>
-                <li>블로그</li>
-                <li>채용 정보</li>
-                <li>도움말</li>
-                <li>API</li>
-                <li>개인정보처리방침</li>
-                <li>약관</li>
-                <li>위치</li>
-                <li>instagram Lite</li>
-                <li>Threads</li>
-                <li>연락처 업로드 & 비사용자</li>
-                <li>Meta Verified</li>
-            </ul>
-            <ul id="footmenu2">
-                <li>한국어</li>
-                <li>⒞2025 Instagram from Meta</li>
-            </ul>
-        </div>
+    </div>
+    </div>
+    <div id="footer">
+        <ul class="footmenu1">
+            <li>Meta</li>
+            <li>소개</li>
+            <li>블로그</li>
+            <li>채용 정보</li>
+            <li>도움말</li>
+            <li>API</li>
+            <li>개인정보처리방침</li>
+            <li>약관</li>
+            <li>위치</li>
+            <li>instagram Lite</li>
+            <li>Threads</li>
+            <li>연락처 업로드 & 비사용자</li>
+            <li>Meta Verified</li>
+        </ul>
+        <ul class="footmenu2">
+            <li><select>
+                <option>한국어</option>
+            </select></li>
+            <li>⒞2025 Instagram from Meta</li>
+        </ul>
+    </div>
     </div>
     </div>
 
