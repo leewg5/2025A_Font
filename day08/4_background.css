@@ -1,0 +1,63 @@
+/* 1. background */
+
+.box{
+    border: 2px solid red;
+    padding: 30px;
+}
+
+.box p{
+    background-color: white;
+    padding: 5px; border: 1px solid white;
+}
+
+
+.color1{
+    /* background-color: blue; */
+    /* background-color: rgba(0, 0, 255);
+    /* background-color: #0000ff; */
+    background-color: rgb(0, 0, 255);
+    /* 마지막 알파는 투명도임 ex) 255 255 255 알파 */
+}
+
+
+.img1{
+    /* background-image: url("파일경로") */
+    background-image: url("아이유.PNG");
+    background-position: center;
+    background-repeat: no-repeat; /* 빈공간 채우기 없음 */
+}
+
+.img2{
+    background-image: url("../day08/패턴1.PNG");
+    background-repeat: repeat; /*(기본값) 만약 비어있는 공간이 있으면 이미지를 채움 */
+}
+
+.img3{
+    background-image: url("../day08/이미지_1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; /* 비율이 유지되나 빈공간이 생길수 있음 */
+    /* background-size: cover; */ /*전체를 채우는데 짤림 */
+    background-color: black;
+}
+
+.img4{
+    background-image: url("../day08/아이유.PNG");
+    background-repeat: no-repeat; /* 채우기 */
+    background-size: cover; /* 비율 유지, 짤림 생길수 있음 */
+    background-position: center; /* 이미지 위치 */
+    background-attachment: fixed; /* (스크롤必) 이동해도 배경이미지는 고정된다. */
+    /* fixed : 페럴렉스 효과, 요소의 텍스트는 고정되고 배경은 스크롤에 따라 이동되는 효과 */
+}
+
+.box2{
+    width: 100px; height: 100px; 
+    border: 2px solid red;
+    background-image: url("../day08/네이버_아이콘.png"); /* 지정된 요소의 사이즈 필요! */
+    background-repeat: no-repeat; /* 채우기 : 없음 */
+    background-position: -50px -300px; /* 위치 +왼쪽 -오른쪽 top +위 -아래 */
+    /* background-size: cover; */
+}
+
+
+

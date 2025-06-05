@@ -1,0 +1,74 @@
+/* 테이블 꾸미기 */
+.basicTable{
+    width: 500px; /* 테이블 크기 */
+    border: 1px solid red;
+}
+
+.basicTable th{
+    border: 1px solid red;
+    padding: 5px;
+}
+
+.basicTable td{
+    border: 1px solid red;
+    padding: 5px;
+}
+
+.basicTable td:nth-child(1){
+    background-color: aqua;
+}
+
+.basicTable td:nth-child(3),
+.basicTable td:nth-child(4),
+.basicTable td:nth-child(5),
+.basicTable td:nth-child(6){
+    text-align: right;
+}
+
+/* [속성 선택자] : 선택자가 지정된 HTML속성명 가질떄
+    - 선택자[HTML속성명] */
+
+.basicTable td[colspan]{
+    text-align: center;
+}
+
+/* td중에 'colspan' 속성을 가진 선택자 */
+
+.basicTable tr:nth-child(5) > td[colspan]{
+    background-color: beige;
+}
+
+
+/* 테이블 꾸미기2 */
+
+.styleTable{
+    width: 700px;
+    border-collapse: collapse; /* 이중테두리를 없애기 */
+}
+
+.styleTable > thead > tr > th{
+    background-color: blue;
+    color: white; font-weight: bold;
+}
+
+
+
+/*  nht-of-type(odd) : 형제들 중에 홀수
+    nht-of-type(even) : 형제들 중에 짝수
+
+.styleTable > tbody tr:nth-last-of-type(odd){
+    background-color: burlywood;
+} */
+
+.styleTable > tbody tr:nth-last-of-type(even){
+    background-color: burlywood;
+}
+
+.styleTable > tbody > tr:hover{
+    background-color: blueviolet; color: white;
+}
+
+.styleTable td , .styleTable th {padding: 10px;}
+
+
+
