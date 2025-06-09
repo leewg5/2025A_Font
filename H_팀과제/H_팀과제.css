@@ -1,0 +1,50 @@
+/* 구역 사이즈 기준: 컨텐츠+안쪽여백 */
+*{box-sizing: border-box;}
+
+
+/*확인용*/
+*{
+    border: 1px solid red;}
+#header{ height: 150px;}
+#main{height: 400px;}
+#footer{height: 100px;}
+
+
+/* wrap : 전체 구역 */
+#wrap{
+    width: 1280px;     /* 웹표준 가로 사이즈 : 1280px */
+    margin: 0 auto;
+}
+
+
+/* 본문 */
+#main{
+    display: flex;
+    flex-wrap: nowrap; /* 크기 자동 맞춤 */
+    flex-direction: row; /* 배치 방향 : 가로 */
+    justify-content: space-between; /* 양쪽에 여백없이 균등정렬 */
+    align-items: stretch;
+}
+
+.H_LOGO{
+    width: 120px; height: 20px;
+ 
+}
+
+.H_H{
+    width: 920px; height: 40px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.Search{
+    width: 400px; height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#main > #contents1{ width: 400px;}  /* 1280px에서 850px사용 */
+#main > #contents2{ width: 400px;}
+#main > #contents3{ width: 400px;}
+
