@@ -1,5 +1,6 @@
 /* 구역 사이즈 기준: 컨텐츠+안쪽여백 */
 *{box-sizing: border-box;}
+*{margin : 0px; padding: 0px;} /*기본 여백들을 제거*/
 
 
 /*확인용*/
@@ -9,6 +10,18 @@
 #main{height: 400px;}
 #footer{height: 100px;}
 
+/* 공통 부문 */
+
+a{ /*링크 기본값 제거 */
+    text-decoration: none; /* 밑줄제거 */
+    color: black; /* 글꼴 색상 */
+}
+
+/* ul 또는 ol에서 글머리 제거 */
+li{ list-style-type: none;}
+
+
+/*====================[스크립트 작성]======================*/
 
 /* wrap : 전체 구역 */
 #wrap{
@@ -28,6 +41,7 @@
 
 .H_LOGO{
     width: 120px; height: 20px;
+    margin: 30px;
  
 }
 
@@ -42,9 +56,126 @@
     width: 400px; height: 40px;
     display: flex;
     align-items: center;
+    background-color: #f2f2f2;
+    margin: 20px;
 }
 
-#main > #contents1{ width: 400px;}  /* 1280px에서 850px사용 */
-#main > #contents2{ width: 400px;}
-#main > #contents3{ width: 400px;}
+#Search_in{
+    background-color: #f2f2f2;
+    width: 376px; height: 20px;
+    padding: 10px;
+    margin: 30px;
+}
+
+.H_D{
+    margin: 10px;
+}
+
+.top-menu{
+    display: flex;
+    justify-content: right;
+    width: 600px;
+}
+
+.H_login{
+    width: 30px; height: 28px;
+}
+
+.H_장바구니{
+    width: 30px; height: 30px;
+}
+
+.list_menu{
+    display: flex;
+    justify-content: space-between;
+    width: 800px; height: 50px;
+    padding: 10px;
+    margin: 30px;
+}
+
+
+.H_midle{
+    text-align: center;
+}
+
+.H_midle > img{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+
+.contentsa{
+    display: flex;
+    width: 393px; height: 393;
+}
+
+.contentsb{
+    display: flex;
+    width: 343px; height: 150;
+}
+
+.HD{
+    color:#666666
+}
+
+.H2{
+    margin: 5px;
+    padding: 5px;
+}
+
+.H2_2{
+    width: 80px; height: 80px;
+    display: flex;
+}
+
+.H2_3{
+    width: 80px; height: 80px;
+    display: flex;
+}
+
+.H2_4{
+    width: 80px; height: 80px;
+    display: flex;
+}
+
+.H2_product1{
+    display: flex;
+}
+
+.H2_product2{
+    display: flex;
+}
+
+.H2_product3{
+    display: flex;
+}
+
+.H2_M{
+    color: #b6b6BB;
+}
+
+.H2_M1{
+    color: red;
+}
+
+.별{
+    display: flex;
+    color:#666666;
+}
+
+.H3_1{
+    display: flex;
+}
+
+.footer-logo1{
+    width: 123px; height: 24px;
+    margin: 25px;
+}
+
+.footer-info{
+    display: flex;
+    margin: 25px;
+}
+
 
