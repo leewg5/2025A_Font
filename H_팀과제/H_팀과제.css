@@ -4,6 +4,7 @@
 
 
 /*확인용*/
+/*
 *{
     border: 1px solid red;}
 /*  #header{ height: 150;}
@@ -38,6 +39,8 @@ li{ list-style-type: none;}
     justify-content: space-between; /* 양쪽에 여백없이 균등정렬 */
     align-items: stretch;
     width: 100%;
+    background-color: honeydew;
+    
 }
 
 .H_LOGO{
@@ -113,6 +116,12 @@ li{ list-style-type: none;}
     display: flex;
     width: 393px; height: 150;
 }
+
+
+
+
+
+
 
 .HD{
     color:#666666
@@ -277,51 +286,106 @@ li{ list-style-type: none;}
 
 .contents2-1{
     margin-bottom: 30px;
+    background-color: #ffffff;
 }
 
 .contents2-2{
     margin-bottom: 30px;
+    background-color: #ffffff;
 }
 
 .contents2-3{
     margin-bottom: 30px;
+    background-color: #ffffff;
 }
 
 .contents2-4{
     margin-bottom: 30px;
+    background-color: #ffffff;
 }
 
 .contents2-5{
     margin-bottom: 30px;
+    background-color: #ffffff;
 }
 
 .contents2-6{
     margin-bottom: 30px;
+    background-color: #ffffff;
 }
 
 .contents2-7{
     margin-bottom: 30px;
+    background-color: #ffffff;
 }
 
 .contents2-8{
     margin-bottom: 30px;
+    background-color: #ffffff;
 }
 
 .contents2-9{
     margin-bottom: 30px;
+    background-color: #ffffff;
 }
 
 .contents2-10{
     margin-bottom: 30px;
+    background-color: #ffffff;
 }
 
 .contents2-11{
     margin-bottom: 30px;
+    background-color: #ffffff;
 }
 
+.contents3-0{
+    margin-bottom: 30px;
+    background-color: #ffffff;
+}
 
 .contents3-1{
     margin-bottom: 30px;
+    background-color: #ffffff;
+}
+
+.contents3-2{
+    margin-bottom: 30px;
+    background-color: #ffffff;
+}
+
+.contents3-3{
+    margin-bottom: 30px;
+    background-color: #ffffff;
+}
+
+.contents3-4{
+    margin-bottom: 30px;
+    background-color: #ffffff;
+}
+
+.contents3-5{
+    margin-bottom: 30px;
+    background-color: #ffffff;
+}
+
+.contents3-6{
+    margin-bottom: 30px;
+    background-color: #ffffff;
+}
+
+.contents3-7{
+    margin-bottom: 30px;
+    background-color: #ffffff;
+}
+.contents3-8{
+    margin-bottom: 30px;
+    background-color: #ffffff;
+}
+
+.contents3-9{
+    margin-bottom: 30px;
+    background-color: #ffffff;
 }
 
 
@@ -794,3 +858,17 @@ li{ list-style-type: none;}
     width: 393px;
 
 }
+
+
+#contents1{
+    background-color: #F0FFF0;
+}
+
+#contents2{
+ background-color: #F0FFF0;
+}
+
+#contents3{
+ background-color: #F0FFF0;
+}
+
