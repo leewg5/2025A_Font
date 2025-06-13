@@ -95,11 +95,13 @@ if (seatList[seat]== 'O'){
 500점 이상 700점 미만: 'C급 경품'
 500점 미만: '참가상'
 
+
 let gamePoint = Number(prompt('게임점수: '))
 if(gamePoint >= 900){console.log('A급 경품');}
 if(gamePoint >= 700 && gamePoint < 900){console.log('B급 경품');}
 if(gamePoint >= 500 && gamePoint < 700){console.log('C급 경품');}
 if(gamePoint < 500){console.log('참가상')}
+
 
 /* -------문제6번 다른버전----------- */
 if(gamePoint >= 900){console.log('A급 경품');}
@@ -168,10 +170,13 @@ else{console.log('재시험')}
 
 let drinkNames = ['콜라', '사이다', '커피'];
 let drinkPrices = [1000, 1000, 1500];    //* 음료의 번호 == 인덱스 번호
-// 조건: (없는 번호) 0~2 사이(범위 논리), num >= 0 && num <=2
+// 조건: (없는 번호) 0~2 사이(범위 논리), num >= 0 && num <= 2
 let num = Number(prompt('음료 번호(0~2):'))
 if(num >= 0 && num <= 2){ // 만약에 입력받은 번호가 0보다 이상이고 2보다 이하이다.
-    console.log('선택하신 음료는 &{drinkNames[num]}입니다. 가격은 ${drinkPrices[num]}원 입니다.');
+    console.log('선택하신 음료는 ${drinkNames[num]}입니다. 가격은 ${drinkPrices[num]}원 입니다.');
 }else{
     console.log('없는 상품입니다.')
 }
+
+
+

@@ -6,8 +6,6 @@
 
 
 
-
-
 // [지문4] prompt 함수로 정수를 입력받아 입력받은 값이 홀수이면 true / 짝수이면 false 로 console탭에 출력하시오.
 let 정수 = Number(prompt("정수:" ))
 let 결과 = 정수 % 2 == 1;
@@ -16,8 +14,8 @@ console.log(`결과: ${결과}`);
 
 // [지문5] prompt 함수로 정수를 입력받아 입력받은 값이 7의 배수이면 true / 아니면 false 로 console탭에 출력하시오.
 let 정수 = prompt("정수:")
-let 결과 = 정수 % 7 == 0
-console.log(`결과:${결과}`)
+let 결과 = 정수 % 7 == 0;
+console.log(`결과:${결과}`);
 
 // [지문6] prompt 함수로 아이디 와 비밀번호를 입력받아서 아이디가 'admin' 이고 비밀번호가 1234 와 일치하면 true / 아니면 false 출력하시오.
 let 아이디 = prompt("아이디:")

@@ -87,5 +87,22 @@ if(아이디목록.indexOf(새로운아이디) != -1 ){
 }
 
 
+0. for문 구조
+    for(초기값 ; 조건문 ; 증감식){
+        명령어(코드);
+    }
+
+1. 무한루프 조심
+
+2. break, continue
+
+3. 배열에는 index가 존재하여 0부터 순서대로 저장번호를 부여
+
+4. 마지막 인덱스 : 변수명.length -1
+for(let index = 0 ; index <= 변수명.length -1 ; index++ ){
+    변수명[index];
+}
+
+
 
 
