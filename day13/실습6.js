@@ -151,6 +151,24 @@ let products = ['볼펜', '노트', '지우개'];
 let stock = [10, 5, 20];
 */
 
+let products = ['볼펜', '노트', '지우개'];
+let stock = [10, 5, 20];
+let 상품명 = prompt('상품명 입력:');               // (1) 사용자로부터 구매할 상품명 입력받아,
+let 수량 = Number(prompt(''));                    // (2) 사용자로부터 구매할 수량을 입력받아,
+
+for(let index = 0; index <= products.lastIndexOf -1, index++){
+    let product = product[index];
+    if( product == 상품명 ){//만약에 index번째 제품명과 입력받은 제품명과 같으면
+        console.log('존재하는 제품명');
+        if(stock[index] >= 수량){ 
+            console.log('구매 완료!');
+        }else{  //아니면
+            console.log('재고가 부족합니다.');
+        }    
+    }
+}
+
+
 
 
 
