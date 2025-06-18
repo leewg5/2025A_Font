@@ -32,38 +32,47 @@ const attends = [{ aid: 1, sid: 10, cid: 678, grade: 'F' },
 { aid: 5, sid: 12, cid: 900, grade: 'C' },];
 
 
-/* (1) HTML 출력한다. 출력되는 정보는 학생명, 과목명, 성적(F 이면 'Fail' 출력 , F 가 아니면 'Pass' 출력)*/
+/* (1) HTML 출력한다. 출력되는 정보는 학생명, 과목명, 
+성적(F 이면 'Fail' 출력 , F 가 아니면 'Pass' 출력)*/
 
 let html = '';
 html += ` <h1>학생별 수강과목 및 성적표</h1><ul> `;
 // 학생 테이블
 for (let index = 0; index <= students.length - 1; index++) {
     let student = students[index];
-    let className2 = '';
+    let className1 = '';
     let studentName = '';
+    let grade = '';
+
     // 수강신청 테이블
     for (let index1 = 0; index1 <= attends.length - 1; index1++) {
         let attend = attends[index1];
         //console.log(attend)
-        if (students.sid == attends.sid) {
-            studentName = students.sName
-        }
+        if(students.sid == attends.sid) {
+            studentName = student.sName
+        
+        }//과목 테이블
         for (let index2 = 0; index2 <= subjects.length - 1; index2++) {
             let subject = subjects[index2];
-            if (students.sid == attends.sid) {
+            if(students.sid == subjects.sid) {
                 //html = attend.cid 
-                className2 = subject.className
+                className1 = subject.className
+                
             }
+            
+            if( grade.cid == subject.cid){
+                
+            }
+
         } // for3 end
 
     } //for2 end
 
 
     html += `<li><div> ${studentName}</div>
-    <span>과목명:${className2}</span>
+    <span>과목명:${className1}</span>
     <span>성적:</span>
-    <span>이수여부:</span>
-    
-    </li>`
+    <span>이수여부:</span></li>`
+
 }
 document.write(html);
