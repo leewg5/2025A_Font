@@ -49,8 +49,8 @@
 
 */
 
-const 전화번호부목록 = [{코드:1, 이름: '홍길동', 전화번호: '010-1234-5678', 메모: 'H회사부장'},
-                    {코드:2, 이름: '서영은', 전화번호: '010-2222-3333'}]
+const 전화번호부목록 = [{코드:1, 이름: '홍길동', 전화번호: '010-1234-5678', 메모: 'H회사과장'},
+                    {코드:2, 이름: '서영은', 전화번호: '010-2222-3333', 메모:'K회사부장'}]
 let 마지막인덱스 = 전화번호부목록.length-1
 let 코드자동번호 = 전화번호부목록[마지막인덱스].코드
 
@@ -71,7 +71,7 @@ const obj = {코드 : 코드자동번호, 이름: name, 전화번호: number, �
 전체조회함수();
 function 전체조회함수(){
 
-    const numberBody = document.querySelector('#number'); console.log(numberBody);
+const numberBody = document.querySelector('#numberBody'); console.log(numberBody);
 
     let html = '';
     for(let index=0; index <= 전화번호부목록.length-1; index++){
