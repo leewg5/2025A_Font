@@ -121,28 +121,30 @@ const students = [
 
 
 /*
- 1.매개변수 : 가장 높은 점수(score)
- 2.리턴값(반환값) : 학생의 이름을 찾아 반환
- 3.처리할 명령어 : 
+ 1.매개변수 : x
+ 2.리턴값(반환값) : 가장높은점수
+ 3.처리할 명령어 : 가장 높은 점수(score)를 가진 학생의 이름 찾기 행동/로직/코드
 */
-/*
+
 const students = [
   { name: '김철수', score: 85 },
   { name: '이영희', score: 92 },
   { name: '박민준', score: 78 }];
 
-function findTopStudent(student) {
-  let score = ''; // 가장 높은 점수를 저장하는 변수
-  for (let index = 0; index <= student.length - 1; index++) {
-    let studentt = student[index];
+function findTopStudent() {
+  let maxObj = { name: '', score: 0 }  // 가장 높은 점수를 저장하는 변수
+  for (let index = 0; index <= students.length - 1; index++) {
+    const student = students[index];
+    if(student.score > maxObj.score){
+      maxObj = student;
+    }
     //만약에 index번째 단어가 가장높은점수이면 index번째 단어 대입한다.
   }
-  let result = findTopStudent(students);
-  return score; //함수가 종료되면서 함수를 호출했던 곳으로 반환하는 값
+  return maxObj.name; //함수가 종료되면서 함수를 호출했던 곳으로 반환하는 값
 }
-let result = findTopStudent(students);
+let result = findTopStudent();
 console.log(result);
-*/
+
 
 
 
