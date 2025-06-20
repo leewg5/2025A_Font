@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <div id="wrap"> <!-- 전체 구역 -->
+        <div id="header"> <!-- 등록 영역 -->
+            <select id="teamInput">
+                <option value="" disabled checked> 카테고리 선택하세요. </option>
+                <option value="1"> 음료 </option>
+                <option value="2"> 과자 </option>
+            </select>
+            <input id="pnameInput" type="text" placeholder="제품명" />
+            <input id="ppriceInput" type="number" placeholder="제품가격" />
+            <input id="pimgInput" type="file" accept="image/* " />
+            <button onclick="productAdd()" class="btnAdd"> 등록 </button>
+        </div>
+    </div>
+
+
+    <script src='2_실습15.js'></script>
+</body>
+</html>
