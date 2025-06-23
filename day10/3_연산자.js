@@ -17,7 +17,7 @@ console.log("점수 :" + 10)  //연결, 점수 : 10
 let 국어 = prompt("국어 : " )
 let 영어 = prompt("영어 : " )
 let 수학 = prompt("수학 : " )
-let 총점 = Nember(국어) + Nember(영어) + Nember(수학);
+let 총점 = Number(국어) + Number(영어) + Number(수학);
 let 평균 = 총점 / 3;
 console.log(`총점: ${총점}, 평균: ${평균}` );
 

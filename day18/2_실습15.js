@@ -73,7 +73,7 @@ let currentFno = 1;
 console.log(teamList);
 console.log(workList);
 console.log(flashList);
-//========================[2] 데이터 모델링 샘플 ===================//
+//========================[2] 데이터 모델링 샘플 ======================//
 teamPint();
 function teamPint(){
     console.log('>>teamPint exe');
