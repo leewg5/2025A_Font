@@ -32,17 +32,19 @@ function productAdd(){ console.log( '--> productAdd exe' );
         alert('비어있는 항목이 있습니다.[실패]');
         return; // 반환값 없는 함수종료 : 아래코드는 실행되지 않는다.
     }
-    let currentPno = 1; // 회원번호 초기값 
-        // ============== sessionStorage 에서 memberList 가져오기 ============ //
-        // (1) sessionStorage 에서 memberList 가져오기
+
+    //localStorage 저장함수
+    let currentPno = 1; // 제품번호 초기값 
+        // ============== sessionStorage 에서 productList 가져오기 ============ //
+        // (1) sessionStorage 에서 productList 가져오기
         let productList = sessionStorage.getItem('productList'); // .getItem('속성명/key')
         // (2) 존재하지 않으면 (배열) 새로 생성 , 존재하면 타입변환
-        if( productList == null ){ // 해당 속성명(memberList)이 존재 하지 않으면 
+        if( productList == null ){ // 해당 속성명(productList)이 존재 하지 않으면 
             productList = []; // 새로운 배열 생성 
-            // no(회원번호)  1 사용한다.
+            // no(제품번호)  1 사용한다.
         }else{ // 존재하면 JSON(배열타입)으로 변환하기. 
             productList = JSON.parse( productList );
-            currentPno = productList[ productList.length-1 ].pno + 1; // 배열내 마지막인덱스의 회원번호 + 1
+            currentPno = productList[ productList.length-1 ].pno + 1; // 배열내 마지막인덱스의 제품번호 + 1
         }
 
 
