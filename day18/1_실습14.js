@@ -86,7 +86,7 @@ function productAdd() {
     console.log('>>priductAdd');
     //(1) 입력 마크업 객체 가져오기
     const categoryInput = document.querySelector('#categoryInput'); console.log(categoryInput);
-    const pnameInput = document.querySelector('#pnameInput'); console.log(pnameInput);
+    const pnameInput = document.querySelectorcccccccccccccccccccccccc
     const ppriceInput = document.querySelector('#ppriceInput'); console.log(ppriceInput);
     const pimgInput = document.querySelector('#pimgInput'); console.log(pimgInput);
     //(2) 입력 마크업 객체에서 입력값 가져오기
