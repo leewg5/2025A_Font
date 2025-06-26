@@ -8,6 +8,8 @@
         - 중지할 interval객체를 대입
 */
 
+
+
 // [1] 예제1
 let value=0; // 전역변수
 function 증가함수(){
