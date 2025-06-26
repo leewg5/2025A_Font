@@ -1,7 +1,10 @@
 function getProducts(){
-    let products = localStorage.getItem('prodicts')
-    if(products==null){products=[]}
-    else{ products = JSON.parse(products);}
+    // 1.호출하기
+    let products =localStorage.getItem('products')
+    if(products == null){products = []}
+    else{
+        products = JSON.parse(products);
+    }
     return products;
 }
 
@@ -10,9 +13,4 @@ function setProducts(products){
 
 }
 
-
-function productAdd(){
-    const pnameInput = document.querySelector('#pnameInput');
-
-}
 
